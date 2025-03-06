@@ -24,7 +24,9 @@ const shopify = new Shopify({
 });
 
 
-
+app.get("/", (req, res) => {
+  res.send("Hello from Vercel Backend!");
+});
 
 app.get('/products', async (req, res) => {
   try {
